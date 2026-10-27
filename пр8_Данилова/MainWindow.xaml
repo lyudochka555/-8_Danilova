@@ -1,0 +1,34 @@
+﻿<Window x:Class="пр8_Данилова.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:пр8_Данилова"
+        mc:Ignorable="d"
+        Title="пр8" Height="450" Width="800" MinHeight="450" MinWidth="800"  Background="Lavender">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Битва войнов"  HorizontalAlignment="Center" Padding="10"  FontWeight="Bold" FontSize="20"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Margin="100,30,100,30">
+                <Image x:Name="LVoinImage" Width="200" Height="200" Stretch="Uniform" Source="C:\Users\student-a502.PERMAVIAT\Desktop\пр8_Данилова\пр8_Данилова\img\vvl.jpg"/>
+                <TextBlock HorizontalAlignment="Center" x:Name="LHText" Text="HP:100" Margin="0, 15,0,0" FontSize="18"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Margin="100,30,100,30">
+                <Image x:Name="TVoinImage" Width="200" Height="200" Stretch="Uniform" Source="C:\Users\student-a502.PERMAVIAT\Desktop\пр8_Данилова\пр8_Данилова\img\vvt.jpg"/>
+                <TextBlock HorizontalAlignment="Center" x:Name="THText" Text="HP:150" Margin="0, 15,0,0" FontSize="18"/>
+            </StackPanel>
+        </Grid>
+        <Button Grid.Row="2" Content="Нанести урон" Click="BClick" Margin="13" Foreground="White" FontWeight="Bold"  Padding="5" Background="DarkRed" FontSize="16"/>
+    </Grid>
+</Window>
